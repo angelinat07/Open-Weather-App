@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/zipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="12"
+            android:hint="Input Zip Code"
+            android:fontFamily="@font/serif"
+            android:textSize="16dp"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/serif"
+            android:text="SEARCH" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/serif"
+        android:text="Location" />
+
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/serif"
+        android:text="Latitude: " />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitude"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8dp"
+        android:fontFamily="@font/serif"
+        android:text="Longitude: " />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitude"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/vibes"
+        android:textAlignment="center"
+        android:text="Quote" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/quote"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/serif"
+        android:text="Current Temperature: " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentTemp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/serif"
+                android:text="Date 1" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/weather1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/serif"
+                android:textAlignment="center"
+                android:text="Weather 1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/high1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/serif"
+                    android:text="High 1" />
+
+                <TextView
+                    android:id="@+id/low1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/serif"
+                    android:text="Low 1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/serif"
+                android:text="Date 2" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/weather2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/serif"
+                android:textAlignment="center"
+                android:text="Weather 2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/high2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/serif"
+                    android:text="High 2" />
+
+                <TextView
+                    android:id="@+id/low2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/serif"
+                    android:text="Low 2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/serif"
+                android:text="Date 3" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/weather3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/serif"
+                android:textAlignment="center"
+                android:text="Weather 3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/high3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/serif"
+                    android:paddingBottom="10dp"
+                    android:text="High 3" />
+
+                <TextView
+                    android:id="@+id/low3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/serif"
+                    android:text="Low 3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/serif"
+                android:text="Date 4" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/weather4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/serif"
+                android:textAlignment="center"
+                android:text="Weather 4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/high4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/serif"
+                    android:text="High 4" />
+
+                <TextView
+                    android:id="@+id/low4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/serif"
+                    android:text="Low 4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/serif"
+                android:text="Date 5" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/weather5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/serif"
+                android:textAlignment="center"
+                android:text="Weather 5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/high5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/serif"
+                    android:text="High 5" />
+
+                <TextView
+                    android:id="@+id/low5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/serif"
+                    android:text="Low 5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
